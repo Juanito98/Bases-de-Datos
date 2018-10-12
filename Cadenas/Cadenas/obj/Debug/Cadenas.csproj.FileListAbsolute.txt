@@ -39,3 +39,6 @@ C:\Users\sdist\Desktop\Bases-de-Datos\Cadenas\Cadenas\obj\Debug\Cadenas.Tablas.P
 C:\Users\sdist\Desktop\Bases-de-Datos\Cadenas\Cadenas\obj\Debug\Cadenas.csproj.GenerateResource.Cache
 C:\Users\sdist\Desktop\Bases-de-Datos\Cadenas\Cadenas\obj\Debug\Cadenas.Form1.resources
 C:\Users\sdist\Desktop\Bases-de-Datos\Cadenas\Cadenas\obj\Debug\Cadenas.Tablas.Compras.resources
+C:\Users\LBARRERAR\Desktop\Bases-de-Datos\Cadenas\Cadenas\bin\Debug\Cadenas.exe.config
+C:\Users\LBARRERAR\Desktop\Bases-de-Datos\Cadenas\Cadenas\obj\Debug\Cadenas.exe
+C:\Users\LBARRERAR\Desktop\Bases-de-Datos\Cadenas\Cadenas\obj\Debug\Cadenas.pdb
