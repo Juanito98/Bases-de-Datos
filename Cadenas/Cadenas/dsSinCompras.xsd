@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsSinCompras" targetNamespace="http://tempuri.org/dsSinCompras.xsd" xmlns:mstns="http://tempuri.org/dsSinCompras.xsd" xmlns="http://tempuri.org/dsSinCompras.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConexionCadena" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConexionCadena (Settings)" PropertyReference="ApplicationSettings.Cadenas.Properties.Settings.GlobalReference.Default.ConexionCadena" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SINCOMPRASTableAdapter" GeneratorDataComponentClassName="SINCOMPRASTableAdapter" Name="SINCOMPRAS" UserDataComponentName="SINCOMPRASTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConexionCadena (Settings)" DbObjectName="BD06.SINCOMPRAS" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CADENA, CLIENTE FROM BD06.SINCOMPRAS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CADENA" DataSetColumn="CADENA" />
+              <Mapping SourceColumn="CLIENTE" DataSetColumn="CLIENTE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsSinCompras" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dsSinCompras" msprop:Generator_UserDSName="dsSinCompras">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SINCOMPRAS" msprop:Generator_TableClassName="SINCOMPRASDataTable" msprop:Generator_TableVarName="tableSINCOMPRAS" msprop:Generator_TablePropName="SINCOMPRAS" msprop:Generator_RowDeletingName="SINCOMPRASRowDeleting" msprop:Generator_RowChangingName="SINCOMPRASRowChanging" msprop:Generator_RowEvHandlerName="SINCOMPRASRowChangeEventHandler" msprop:Generator_RowDeletedName="SINCOMPRASRowDeleted" msprop:Generator_UserTableName="SINCOMPRAS" msprop:Generator_RowChangedName="SINCOMPRASRowChanged" msprop:Generator_RowEvArgName="SINCOMPRASRowChangeEvent" msprop:Generator_RowClassName="SINCOMPRASRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CADENA" msprop:Generator_ColumnVarNameInTable="columnCADENA" msprop:Generator_ColumnPropNameInRow="CADENA" msprop:Generator_ColumnPropNameInTable="CADENAColumn" msprop:Generator_UserColumnName="CADENA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENTE" msprop:Generator_ColumnVarNameInTable="columnCLIENTE" msprop:Generator_ColumnPropNameInRow="CLIENTE" msprop:Generator_ColumnPropNameInTable="CLIENTEColumn" msprop:Generator_UserColumnName="CLIENTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

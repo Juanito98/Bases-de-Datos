@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsMontoTotalSuc" targetNamespace="http://tempuri.org/dsMontoTotalSuc.xsd" xmlns:mstns="http://tempuri.org/dsMontoTotalSuc.xsd" xmlns="http://tempuri.org/dsMontoTotalSuc.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConexionCadena" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConexionCadena (Settings)" PropertyReference="ApplicationSettings.Cadenas.Properties.Settings.GlobalReference.Default.ConexionCadena" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MONTOTOTALSUCTableAdapter" GeneratorDataComponentClassName="MONTOTOTALSUCTableAdapter" Name="MONTOTOTALSUC" UserDataComponentName="MONTOTOTALSUCTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConexionCadena (Settings)" DbObjectName="BD06.MONTOTOTALSUC" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CADENA, SUCURSAL, TOTALVENTAS FROM BD06.MONTOTOTALSUC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CADENA" DataSetColumn="CADENA" />
+              <Mapping SourceColumn="SUCURSAL" DataSetColumn="SUCURSAL" />
+              <Mapping SourceColumn="TOTALVENTAS" DataSetColumn="TOTALVENTAS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsMontoTotalSuc" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dsMontoTotalSuc" msprop:Generator_UserDSName="dsMontoTotalSuc">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MONTOTOTALSUC" msprop:Generator_TableClassName="MONTOTOTALSUCDataTable" msprop:Generator_TableVarName="tableMONTOTOTALSUC" msprop:Generator_TablePropName="MONTOTOTALSUC" msprop:Generator_RowDeletingName="MONTOTOTALSUCRowDeleting" msprop:Generator_RowChangingName="MONTOTOTALSUCRowChanging" msprop:Generator_RowEvHandlerName="MONTOTOTALSUCRowChangeEventHandler" msprop:Generator_RowDeletedName="MONTOTOTALSUCRowDeleted" msprop:Generator_UserTableName="MONTOTOTALSUC" msprop:Generator_RowChangedName="MONTOTOTALSUCRowChanged" msprop:Generator_RowEvArgName="MONTOTOTALSUCRowChangeEvent" msprop:Generator_RowClassName="MONTOTOTALSUCRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CADENA" msprop:Generator_ColumnVarNameInTable="columnCADENA" msprop:Generator_ColumnPropNameInRow="CADENA" msprop:Generator_ColumnPropNameInTable="CADENAColumn" msprop:Generator_UserColumnName="CADENA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUCURSAL" msprop:Generator_ColumnVarNameInTable="columnSUCURSAL" msprop:Generator_ColumnPropNameInRow="SUCURSAL" msprop:Generator_ColumnPropNameInTable="SUCURSALColumn" msprop:Generator_UserColumnName="SUCURSAL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOTALVENTAS" msprop:Generator_ColumnVarNameInTable="columnTOTALVENTAS" msprop:Generator_ColumnPropNameInRow="TOTALVENTAS" msprop:Generator_ColumnPropNameInTable="TOTALVENTASColumn" msprop:Generator_UserColumnName="TOTALVENTAS" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
