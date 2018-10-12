@@ -16,7 +16,7 @@ namespace Cadenas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Cadenas());
+            Application.Run(new Form1());
         }
     }
 }

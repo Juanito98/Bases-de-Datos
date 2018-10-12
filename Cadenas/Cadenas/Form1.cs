@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cadenas
 {
-    public partial class Cadenas : Form
+    public partial class Form1 : Form
     {
-        public Cadenas()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -39,6 +39,11 @@ namespace Cadenas
         {
             Tablas.Procesos p = new Tablas.Procesos();
             p.Show();
+        }
+
+        private void menuCompras_Click(object sender, EventArgs e) {
+            Tablas.Compras c = new Tablas.Compras();
+            c.Show();
         }
     }
 }

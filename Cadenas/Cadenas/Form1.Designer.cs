@@ -1,6 +1,6 @@
 ﻿namespace Cadenas
 {
-    partial class Cadenas
+    partial class Form1
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -34,6 +34,7 @@
             this.menuProducto = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConsultas = new System.Windows.Forms.ToolStripMenuItem();
             this.menuProcesos = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuCompras = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,7 +42,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tablasToolStripMenuItem,
-            this.menuProcesos});
+            this.menuProcesos,
+            this.menuCompras});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(480, 24);
@@ -61,21 +63,21 @@
             // menuCliente
             // 
             this.menuCliente.Name = "menuCliente";
-            this.menuCliente.Size = new System.Drawing.Size(152, 22);
+            this.menuCliente.Size = new System.Drawing.Size(126, 22);
             this.menuCliente.Text = "Cliente";
             this.menuCliente.Click += new System.EventHandler(this.menuCliente_Click);
             // 
             // menuProducto
             // 
             this.menuProducto.Name = "menuProducto";
-            this.menuProducto.Size = new System.Drawing.Size(152, 22);
+            this.menuProducto.Size = new System.Drawing.Size(126, 22);
             this.menuProducto.Text = "Producto";
             this.menuProducto.Click += new System.EventHandler(this.menuProducto_Click);
             // 
             // menuConsultas
             // 
             this.menuConsultas.Name = "menuConsultas";
-            this.menuConsultas.Size = new System.Drawing.Size(152, 22);
+            this.menuConsultas.Size = new System.Drawing.Size(126, 22);
             this.menuConsultas.Text = "Consultas";
             this.menuConsultas.Click += new System.EventHandler(this.menuConsultas_Click);
             // 
@@ -86,14 +88,21 @@
             this.menuProcesos.Text = "Procesos";
             this.menuProcesos.Click += new System.EventHandler(this.menuProcesos_Click);
             // 
-            // Cadenas
+            // menuCompras
+            // 
+            this.menuCompras.Name = "menuCompras";
+            this.menuCompras.Size = new System.Drawing.Size(67, 20);
+            this.menuCompras.Text = "Compras";
+            this.menuCompras.Click += new System.EventHandler(this.menuCompras_Click);
+            // 
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(480, 315);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Cadenas";
+            this.Name = "Form1";
             this.Text = "Cadenas Comerciales";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -110,6 +119,7 @@
         private System.Windows.Forms.ToolStripMenuItem menuProducto;
         private System.Windows.Forms.ToolStripMenuItem menuConsultas;
         private System.Windows.Forms.ToolStripMenuItem menuProcesos;
+        private System.Windows.Forms.ToolStripMenuItem menuCompras;
     }
 }
 
