@@ -28,6 +28,7 @@
             this.cboClientes = new System.Windows.Forms.ComboBox();
             this.fechaCompra = new System.Windows.Forms.DateTimePicker();
             this.dgCompras = new System.Windows.Forms.DataGridView();
+            this.btConsulta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgCompras)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,14 +72,25 @@
             this.dgCompras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgCompras.Location = new System.Drawing.Point(5, 65);
             this.dgCompras.Name = "dgCompras";
-            this.dgCompras.Size = new System.Drawing.Size(474, 321);
+            this.dgCompras.Size = new System.Drawing.Size(809, 321);
             this.dgCompras.TabIndex = 4;
+            // 
+            // btConsulta
+            // 
+            this.btConsulta.Location = new System.Drawing.Point(327, 23);
+            this.btConsulta.Name = "btConsulta";
+            this.btConsulta.Size = new System.Drawing.Size(75, 23);
+            this.btConsulta.TabIndex = 5;
+            this.btConsulta.Text = "Consulta";
+            this.btConsulta.UseVisualStyleBackColor = true;
+            this.btConsulta.Click += new System.EventHandler(this.btConsulta_Click);
             // 
             // Compras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 398);
+            this.ClientSize = new System.Drawing.Size(823, 414);
+            this.Controls.Add(this.btConsulta);
             this.Controls.Add(this.dgCompras);
             this.Controls.Add(this.fechaCompra);
             this.Controls.Add(this.cboClientes);
@@ -100,5 +112,6 @@
         private System.Windows.Forms.ComboBox cboClientes;
         private System.Windows.Forms.DateTimePicker fechaCompra;
         private System.Windows.Forms.DataGridView dgCompras;
+        private System.Windows.Forms.Button btConsulta;
     }
 }
