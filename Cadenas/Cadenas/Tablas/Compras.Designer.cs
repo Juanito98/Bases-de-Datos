@@ -35,7 +35,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 9);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 0;
@@ -53,7 +53,7 @@
             // cboClientes
             // 
             this.cboClientes.FormattingEnabled = true;
-            this.cboClientes.Location = new System.Drawing.Point(5, 25);
+            this.cboClientes.Location = new System.Drawing.Point(12, 25);
             this.cboClientes.Name = "cboClientes";
             this.cboClientes.Size = new System.Drawing.Size(121, 21);
             this.cboClientes.TabIndex = 2;
@@ -72,12 +72,12 @@
             this.dgCompras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgCompras.Location = new System.Drawing.Point(5, 65);
             this.dgCompras.Name = "dgCompras";
-            this.dgCompras.Size = new System.Drawing.Size(809, 321);
+            this.dgCompras.Size = new System.Drawing.Size(723, 293);
             this.dgCompras.TabIndex = 4;
             // 
             // btConsulta
             // 
-            this.btConsulta.Location = new System.Drawing.Point(327, 23);
+            this.btConsulta.Location = new System.Drawing.Point(315, 25);
             this.btConsulta.Name = "btConsulta";
             this.btConsulta.Size = new System.Drawing.Size(75, 23);
             this.btConsulta.TabIndex = 5;
@@ -89,7 +89,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(823, 414);
+            this.ClientSize = new System.Drawing.Size(746, 371);
             this.Controls.Add(this.btConsulta);
             this.Controls.Add(this.dgCompras);
             this.Controls.Add(this.fechaCompra);

@@ -119,6 +119,12 @@
     <Compile Include="Tablas\Producto.Designer.cs">
       <DependentUpon>Producto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tablas\RegistroCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas\RegistroCompra.Designer.cs">
+      <DependentUpon>RegistroCompra.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tablas\Producto.resx">
       <DependentUpon>Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas\RegistroCompra.resx">
+      <DependentUpon>RegistroCompra.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="dsClientes.xsc">
       <DependentUpon>dsClientes.xsd</DependentUpon>
