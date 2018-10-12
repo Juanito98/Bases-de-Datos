@@ -45,5 +45,11 @@ namespace Cadenas
             Tablas.Compras c = new Tablas.Compras();
             c.Show();
         }
+
+        private void menuHacerCompra_Click(object sender, EventArgs e)
+        {
+            Tablas.RegistroCompra r = new Tablas.RegistroCompra();
+            r.Show();
+        }
     }
 }

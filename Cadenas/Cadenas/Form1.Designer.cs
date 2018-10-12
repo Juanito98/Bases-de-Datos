@@ -35,6 +35,7 @@
             this.menuConsultas = new System.Windows.Forms.ToolStripMenuItem();
             this.menuProcesos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCompras = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuHacerCompra = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,7 +44,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tablasToolStripMenuItem,
             this.menuProcesos,
-            this.menuCompras});
+            this.menuCompras,
+            this.menuHacerCompra});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(480, 24);
@@ -95,6 +97,13 @@
             this.menuCompras.Text = "Compras";
             this.menuCompras.Click += new System.EventHandler(this.menuCompras_Click);
             // 
+            // menuHacerCompra
+            // 
+            this.menuHacerCompra.Name = "menuHacerCompra";
+            this.menuHacerCompra.Size = new System.Drawing.Size(94, 20);
+            this.menuHacerCompra.Text = "Hacer compra";
+            this.menuHacerCompra.Click += new System.EventHandler(this.menuHacerCompra_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,6 +129,7 @@
         private System.Windows.Forms.ToolStripMenuItem menuConsultas;
         private System.Windows.Forms.ToolStripMenuItem menuProcesos;
         private System.Windows.Forms.ToolStripMenuItem menuCompras;
+        private System.Windows.Forms.ToolStripMenuItem menuHacerCompra;
     }
 }
 
